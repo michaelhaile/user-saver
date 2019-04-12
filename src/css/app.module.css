@@ -1,0 +1,10 @@
+body {
+    margin: 20px;
+}
+.container {
+    display: grid;
+    max-width: 1500px;
+    margin: auto;
+    grid-gap: 25px;
+    font-family: 'Open Sans', sans-serif;
+}

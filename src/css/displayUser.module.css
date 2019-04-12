@@ -1,0 +1,23 @@
+.container {
+    display:  grid;
+    font-size: 15px;
+}
+
+.container div h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 875px) {
+    .tableWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .tableWrapper {
+        grid-template-columns: 1fr;
+    }
+}

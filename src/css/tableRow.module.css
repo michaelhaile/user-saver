@@ -1,0 +1,25 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.row:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.row:last-child {
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 875px) {
+    .row {
+        display: block;
+        margin: 10px 0;
+        box-shadow: 0 0.4rem 1.2rem 0.2rem rgba(0,0,0,.05);
+        border: 1px solid #ddd;
+    }
+
+    .row:nth-child(even) {
+        background: #fff;
+    }
+}

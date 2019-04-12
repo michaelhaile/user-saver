@@ -1,0 +1,21 @@
+.searchBar input {
+    border: 1px solid;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 275px;
+    width: calc(100% - 19px);
+    padding-left: 15px;
+}
+
+.searchBar input:focus {
+    border: 2px solid;
+    outline: none;
+}
+
+.searchBar input:focus::placeholder,
+.searchBar input::placeholder{
+    font-size: 20px;
+    opacity: .6;
+}

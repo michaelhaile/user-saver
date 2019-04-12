@@ -1,0 +1,55 @@
+.cell {
+    grid-row-start: 1;
+    padding: 10px 0;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+}
+
+.cell:last-child {
+    border-right: 1px solid;
+}
+
+.inside {
+    padding: 0 10px;
+}
+
+.inside a {
+    text-decoration: none;
+    color: #4688f1;
+}
+
+.mobileHeader {
+    display: none;
+}
+
+@media screen and (max-width: 875px) {
+    .inside {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .cell {
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cell:first-child {
+        border-top: 3px solid #747a7e;
+    }
+
+    .cell:last-child {
+        border-right: none;
+    }
+
+    .mobileHeader {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .content {
+        text-align: left;
+    }
+}

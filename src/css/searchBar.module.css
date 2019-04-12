@@ -1,0 +1,44 @@
+.messageWrapper {
+    height: 40px;
+    position: relative;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.2);
+    display: table;
+    width: 100%;
+}
+
+.messageWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.messageWrapper div {
+    padding: 0 70px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.success::before {
+    background-color: #2BDE3F;
+}
+
+.error::before {
+    background-color: #ff0000;
+}
+
+.success {
+    color: #3c763d;
+    background: #d6e9c6;
+}
+
+.error {
+    color: #a94442;
+    background: #ebccd1;
+}
+
